@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Details</title>
+    <link rel="stylesheet" href="style/character.css" />
+  </head>
+  <body>
+    <div class="columns">
+      <div class="column">
+        <div class="character-details">
+          <div class="character-image">
+            <img id="characterImage" src="" alt="Character Image" />
+          </div>
+          <div class="character-info">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Name:</th>
+                  <td id="characterName"></td>
+                </tr>
+                <tr>
+                  <th>Gender:</th>
+                  <td id="characterGender"></td>
+                </tr>
+                <tr>
+                  <th>Species:</th>
+                  <td id="characterSpecies"></td>
+                </tr>
+                <tr>
+                  <th>Status:</th>
+                  <td id="characterStatus"></td>
+                </tr>
+                <tr>
+                  <th>Location:</th>
+                  <td id="characterLocation"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="episode-info">
+          <h3>Episodes:</h3>
+          <table id="characterEpisodes"></table>
+        </div>
+      </div>
+    </div>
+    <button id="backButton">Back</button>
+    <script src="js/character.js"></script>
+  </body>
+</html>

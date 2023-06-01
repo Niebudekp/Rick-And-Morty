@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style dla body */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 30px;
+  background-color: #f2f9fd;
+}
+
+/* Style dla sekcji z danymi postaci */
+.character-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.character-image {
+  margin-bottom: 20px;
+}
+
+.character-image img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.character-info {
+  text-align: left;
+}
+
+.character-info table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.character-info th,
+.character-info td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.character-info th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+/* Style dla sekcji z informacjami o odcinkach */
+.episode-info {
+  margin-top: 50px;
+  text-align: left;
+  height: 600px;
+  overflow: auto;
+}
+
+.episode-info table {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.episode-info th,
+.episode-info td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.episode-info th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+/* Kolumny */
+.columns {
+  display: grid;
+  grid-template-columns: 50% 70%;
+  grid-column-gap: 4%;
+}
+
+.column {
+  margin: 0;
+  margin-left: 0;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+#backButton {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+/* Responsywność */
+@media screen and (max-width: 1440px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .columns {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+
+  .column {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .columns {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .columns {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+
+  .column {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .columns {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+}
